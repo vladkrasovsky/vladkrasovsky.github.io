@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arsenal', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* main styles */
+
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #f5f7fa;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content {
+    background-color: #fff;
+}
+
+/* about styles */
+
+/* projects styles */
+
+.projects {
+    margin: 100px 90px 300px 60px;
+}
+
+.project-title {
+    font-size: 45px;
+    color: blue;
+}
+
+/* work styles */
+
+/* education styles */
+
+/* sidebar styles */
+.sidebar {
+    background-color: #1E2939;
+}
