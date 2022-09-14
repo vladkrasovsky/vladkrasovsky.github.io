@@ -83,7 +83,7 @@ body {
   color: #595959;
 }
 
-.project-link {
+.project-link:first-child {
   margin-left: 10px;
 }
 
@@ -145,6 +145,10 @@ body {
   margin: 10px 0;
 }
 
+.education-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 /* sidebar styles */
 .sidebar {
   background-color: #1e2939;
@@ -167,7 +171,8 @@ body {
 }
 
 .contacts,
-.tech-skills {
+.tech-skills,
+.soft-skills:not(:last-child) {
   margin-bottom: 50px;
 }
 
@@ -207,4 +212,27 @@ body {
   color: #fff;
   font-size: 14px;
   line-height: 24px;
+}
+
+.socials {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.socials-item + .socials-item {
+  margin-left: 15px;
+}
+
+@media print {
+  .main-content {
+    box-shadow: none;
+  }
+  * {
+    color: black !important;
+  }
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
 }
